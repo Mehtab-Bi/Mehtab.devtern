@@ -1,0 +1,206 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  background-image: url('sun.jpg');
+  background-size: cover;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff9900;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #ffcc00;
+}
+
+/* About section styles */
+.about {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+/* Features section styles */
+.features {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features ul li {
+  margin-bottom: 10px;
+}
+
+/* Pricing section styles */
+.pricing {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.pricing h2 {
+  margin-bottom: 20px;
+}
+
+.pricing ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact section styles */
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact form {
+  margin-top: 20px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button[type="submit"] {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: #ffcc00;
+}
+
+/* Sunglass modal styles */
+.sunglasses-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sunglasses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sunglasses-card {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.close-modal {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

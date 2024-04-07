@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunglass Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS for Explore message */
+    .explore-message {
+      color: black; /* Set the color to black */
+    }
+
+    /* CSS for message after form submission */
+    .assistance-message {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1 style="color: black;">Stylish Sunglasses</h1>
+      <p style="color: white;">Discover the latest trends in eyewear.</p>
+      <a href="shop.html" class="cta-button" id="shop-now-button">Shop Now</a>
+      <p class="explore-message">Click on the "Shop Now" button to explore a wide variety of sunglasses.</p>
+    </div>
+  </section>
+  
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are passionate about providing high-quality sunglasses that combine style and functionality. Our mission is to help you look and feel your best while protecting your eyes from the sun's harmful rays.</p>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Polarized lenses for glare reduction</li>
+      <li>UV protection to shield your eyes from harmful sun rays</li>
+      <li>Durable and lightweight frames for all-day comfort</li>
+    </ul>
+  </section>
+  
+  <section id="pricing" class="pricing">
+    <h2>Pricing</h2>
+    <p>Find the perfect pair at the right price:</p>
+    <ul>
+      <li>Classic Collection - $50</li>
+      <li>Sport Collection - $60</li>
+      <li>Luxury Collection - $80</li>
+    </ul>
+  </section>
+  
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need assistance? Contact our customer support team:</p>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="assistance-message" id="assistance-message"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sunglass Co.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Get the form element
+    const form = document.getElementById('contact-form');
+    // Get the message element
+    const message = document.getElementById('assistance-message');
+
+    // Add event listener for form submission
+    form.addEventListener('submit', function(event) {
+      // Prevent default form submission
+      event.preventDefault();
+
+      // Display the message after form submission
+      message.textContent = 'Thank you! You will be provided with assistance soon.';
+    });
+  </script>
+</body>
+</html>
